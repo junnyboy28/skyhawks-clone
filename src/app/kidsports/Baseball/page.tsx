@@ -80,7 +80,7 @@ export default function Baseball() {
                   <li>Ages 4 to 7 (Participant to coach ratio approximately 8:1)</li>
                   <li>Ages 6 to 12 (Participant to coach ratio approximately 10:1)</li>
                 </ul>
-              <p>Not every age group is available in every market. To see if there is a camp that is perfect for you, use our &ldquo;find a camp in your area&rdquo; button.</p>
+                <p>Not every age group is available in every market. To see if there is a camp that is perfect for you, use our "find a camp in your area" button.</p>
                 <p><strong>Groups:</strong> At each camp we place campers into groups based on age and ability.</p>
                 <p><strong>Ability:</strong> Skyhawks baseball camps are perfect for the beginning to intermediate level player.</p>
               </div>
@@ -132,38 +132,38 @@ export default function Baseball() {
             )}
             {selectedOption === 'Reviews' && (
               <div className="text-gray-700">
-{[
-  {
-    text: &ldquo;The two coaches Joey had for Baseball were exceptional. They were engaging, fun, and my son had a great time. He came home with new skills and really enjoyed each day of the week. Also, the coaches were very sensitive to the sun and possible dehydration and sunburns. Not one day did my son get burned or leave there dehydrated. I was very impressed this year with the quality of his experience.&rdquo;,
-    author: "Martha C.",
-    location: "Longmont, CO"
-  },
-  {
-    text: &ldquo;Brian enjoyed this baseball camp very much. He had a chance to review the basic skills and to practice to improve those skills. His batting is getting better. Thank you.&rdquo;,
-    author: "Steve A.",
-    location: "Snohomish, WA"
-  },
-  {
-    text: &ldquo;My son had so much fun learning the skills of baseball with his coaches! They let the kids have lots of fun and still keep them all behaving very well. The coaches really made my son feel safe and they were so willing to play with the kids on their level and have fun also! Thanks so much!&rdquo;,
-    author: "Christa D.",
-    location: "Spokane, WA"
-  },
-  {
-    text: &ldquo;My son loved his coaches and definitely wants to come back next year. He did not know much about baseball when he started, and he left with a very good grasp on the sport and some wonderful skills. Thank you.&rdquo;,
-    author: "Carol C.",
-    location: "Whidbey Island, WA"
-  },
-  {
-    text: &ldquo;Sophia enjoyed the program very much. It helped to really get her interested in baseball and want to do it again. We will most likely sign her up for it next year again.&rdquo;,
-    author: "Tamara H.",
-    location: "Billings, MT"
-  }
-].map(({ text, author, location }) => (
-  <div key={text} className="mb-4">
-    <p className="italic">&ldquo;{text}&rdquo;</p>
-    <p className="text-right text-gray-600">- {author}, {location}</p>
-  </div>
-))}
+                {[
+                  {
+                    text: "The two coaches Joey had for Baseball were exceptional. They were engaging, fun, and my son had a great time. He came home with new skills and really enjoyed each day of the week. Also, the coaches were very sensitive to the sun and possible dehydration and sunburns. Not one day did my son get burned or leave there dehydrated. I was very impressed this year with the quality of his experience.",
+                    author: "Martha C.",
+                    location: "Longmont, CO"
+                  },
+                  {
+                    text: "Brian enjoyed this baseball camp very much. He had a chance to review the basic skills and to practice to improve those skills. His batting is getting better. Thank you.",
+                    author: "Steve A.",
+                    location: "Snohomish, WA"
+                  },
+                  {
+                    text: "My son had so much fun learning the skills of baseball with his coaches! They let the kids have lots of fun and still keep them all behaving very well. The coaches really made my son feel safe and they were so willing to play with the kids on their level and have fun also! Thanks so much!",
+                    author: "Christa D.",
+                    location: "Spokane, WA"
+                  },
+                  {
+                    text: "My son loved his coaches and definitely wants to come back next year. He did not know much about baseball when he started, and he left with a very good grasp on the sport and some wonderful skills. Thank you.",
+                    author: "Carol C.",
+                    location: "Whidbey Island, WA"
+                  },
+                  {
+                    text: "Sophia enjoyed the program very much. It helped to really get her interested in baseball and want to do it again. We will most likely sign her up for it next year again.",
+                    author: "Tamara H.",
+                    location: "Billings, MT"
+                  }
+                ].map(({ text, author, location }) => (
+                  <div key={text} className="mb-4">
+                    <p className="italic">"{text}"</p>
+                    <p className="text-right text-gray-600">- {author}, {location}</p>
+                  </div>
+                ))}
               </div>
             )}
           </div>
