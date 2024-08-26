@@ -80,7 +80,7 @@ export default function Baseball() {
                   <li>Ages 4 to 7 (Participant to coach ratio approximately 8:1)</li>
                   <li>Ages 6 to 12 (Participant to coach ratio approximately 10:1)</li>
                 </ul>
-                <p>Not every age group is available in every market. To see if there is a camp that is perfect for you, use our "find a camp in your area" button.</p>
+                <p>Not every age group is available in every market. To see if there is a camp that is perfect for you, use our &quot;find a camp in your area&quot; button.</p>
                 <p><strong>Groups:</strong> At each camp we place campers into groups based on age and ability.</p>
                 <p><strong>Ability:</strong> Skyhawks baseball camps are perfect for the beginning to intermediate level player.</p>
               </div>
@@ -160,7 +160,7 @@ export default function Baseball() {
                   }
                 ].map(({ text, author, location }) => (
                   <div key={text} className="mb-4">
-                    <p className="italic">"{text}"</p>
+                    <p className="italic">&quot;{text}&quot;</p>
                     <p className="text-right text-gray-600">- {author}, {location}</p>
                   </div>
                 ))}
