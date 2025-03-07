@@ -1,0 +1,40 @@
+name: Deploy Next.js App
+
+on:
+  push:
+    branches:
+      - main  # Runs only when you push to the main branch
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Node.js and Dependencies
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Tests
+        run: npm test   
+
+      - name: Deploy to EC2
+        if: success()  # Deploy only if tests pass
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd ~/your-app-folder
+            git pull origin main
+            npm install
+            npm run build
+            pm2 restart nextjs-app || pm2 start npm --name "nextjs-app" -- start
