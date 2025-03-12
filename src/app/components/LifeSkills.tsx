@@ -4,7 +4,7 @@ const LifeSkills = () => {
   return (
     <section className="container mx-auto px-4 py-8">
       <h2 className="text-4xl font-bold text-center text-blue-600 mb-8">
-        TEACHING LIFE SKILLS THROUGH SPORTS
+        Checking pipeline
       </h2>
       <div className="flex flex-col sm:flex-row sm:justify-center gap-8 sm:gap-16">
         <button className="bg-white p-8 rounded-lg shadow-lg w-full sm:w-[400px] flex flex-col items-center border-2 border-transparent hover:border-blue-500 transition-all duration-300">
