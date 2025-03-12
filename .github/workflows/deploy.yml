@@ -3,7 +3,7 @@ name: Deploy Next.js App
 on:
   push:
     branches:
-      - main  # Runs only when you push to the main branch
+      - master  # Runs only when you push to the main branch
 
 jobs:
   build-test-deploy:
