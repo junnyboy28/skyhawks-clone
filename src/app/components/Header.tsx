@@ -86,7 +86,7 @@ const Header = () => {
 
       <div className="hidden md:flex ml-auto">
         <Link href="https://register.skyhawks.com/login" className="text-blue-600 underline hover:text-blue-800 transition duration-300">
-          LOGIN / SIGN UP {/* Modified text for CI/CD trigger */}
+          CICD zb {/* Modified text for CI/CD trigger */}
         </Link>
       </div>
     </header>
