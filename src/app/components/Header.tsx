@@ -35,7 +35,7 @@ const Header = () => {
 
       <nav className={`${isMobileMenuOpen ? 'flex' : 'hidden'} md:flex flex-col md:flex-row w-full md:w-auto mt-4 md:mt-0 gap-4 md:gap-8 items-start md:items-center md:justify-start`}>
         <Link href="https://register.skyhawks.com/" className="bg-blue-600 text-white px-4 py-2 rounded hover:underline transition duration-300 w-full md:w-auto text-center">
-          FIND YOUR PROGRAM
+          Browse Program
         </Link>
         <div className="relative w-full md:w-auto">
           <button
