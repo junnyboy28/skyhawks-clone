@@ -34,7 +34,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd ~/your-app-folder
-            git pull origin main
+            git pull origin master
             npm install
             npm run build
             pm2 restart nextjs-app || pm2 start npm --name "nextjs-app" -- start
