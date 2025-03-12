@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 const Header = () => {
+  console.log("Header component loaded"); // Added for testing CI/CD pipeline
+
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -84,7 +86,7 @@ const Header = () => {
 
       <div className="hidden md:flex ml-auto">
         <Link href="https://register.skyhawks.com/login" className="text-blue-600 underline hover:text-blue-800 transition duration-300">
-          SIGN UP / LOGIN
+          LOGIN / SIGN UP {/* Modified text for CI/CD trigger */}
         </Link>
       </div>
     </header>
