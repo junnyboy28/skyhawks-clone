@@ -17,7 +17,7 @@ const LifeSkills = () => {
           />
           <hr className="w-full border-gray-300 mb-4" />
           <p className="text-center text-gray-700 text-lg">
-            Skill-Based Camps, After-School Programs, Classes & Leagues for Ages 4 to 14
+            7th time testing 
           </p>
         </button>
         <button className="bg-white p-8 rounded-lg shadow-lg w-full sm:w-[400px] flex flex-col items-center border-2 border-transparent hover:border-blue-500 transition-all duration-300">
